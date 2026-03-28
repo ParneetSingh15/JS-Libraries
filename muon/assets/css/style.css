@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(241, 241, 241);
+    color: rgb(42, 41, 41);
+}
+
+/* navbar styling */
+header {
+    background-color: rgb(199, 199, 199);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#herop {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0px 120px;
+}
+
+/* carousel images styling */
+.trimages {
+    height: auto;
+    width: 700px;
+}
+
+/* carousel positioning */
+#container {
+    margin-left: auto;
+    margin-right: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* bottom section styling */
+#subheader {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subhead {
+    font-family: "Roboto";
+    font-size: 22px;
+}
+
+#caption {
+    font-family: "Roboto";
+    font-size: 12px;
+}
+
+
+/* anchor positioning */
+#lightimg {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* anchor styling for lightbox images */
+.light {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(42, 41, 41);
+    padding: 10px;
+    text-decoration: underline;
+}

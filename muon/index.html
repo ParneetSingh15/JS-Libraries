@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS stylesheet link -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- glide core css import -->
+    <link rel="stylesheet" href="/assets/css/glide.core.min.css">
+    <link rel="stylesheet" href="/assets/css/glide.theme.min.css">
+
+    <!-- animate on scroll library import -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- lightbox import -->
+    <link rel="stylesheet" href="/assets/css/lightbox.css">
+
+    <title>JS Libraries</title>
+</head>
+<body>
+    <!-- navbar -->
+    <header data-aos="fade-down">
+        <p>HOME</p>
+        <p>ABOUT</p>
+        <p>CONTACT</p>
+    </header>
+    
+    <!-- hero section -->
+    <div data-aos="fade-right">
+        <p id="herop">Welcome to Muon Travel Agency! We are excited to announce brand new travel options includng cruise ships and more! We also have new exciting offers and coupons and more if you bring a companion. Explore the world in a cheaper and smarter way!</p>
+    </div>
+
+    <!-- carousel -->
+    <div id="container" data-aos="fade-left">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img class="trimages" src="/assets/images/tr1.jpeg" alt=""></li>
+                    <li class="glide__slide"><img class="trimages" src="/assets/images/tr2.jpeg" alt=""></li>
+                    <li class="glide__slide"><img class="trimages" src="/assets/images/tr3.jpeg" alt=""></li>
+                    <li class="glide__slide"><img class="trimages" src="/assets/images/tr4.jpeg" alt=""></li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom section heading -->
+    <div id="subheader">
+        <p id="subhead">SOME OF OUR MOST POPULAR DESTINATIONS</p>
+        <p id="caption">click to view</p>
+    </div>
+
+    <!-- lightbox images -->
+    <div id="lightimg">
+        <a class="light" href="/assets/images/monuments.jpeg" data-lightbox="image-1">Travel The Monuments</a>
+        <a class="light" href="/assets/images/alps.jpeg" data-lightbox="mountains">Travel The Alps</a>
+        <a class="light" href="/assets/images/andes.jpeg" data-lightbox="mountains">Travel The Andes</a>
+        <a class="light" href="/assets/images/caucasus.jpeg" data-lightbox="mountains">Travel The Caucasus</a>
+        <a class="light" href="/assets/images/himalayas.jpeg" data-lightbox="mountains">Travel The Himalayas</a>
+    </div>
+
+    <!-- glidejs import -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        const config = {
+            type: 'carousel',
+            perView: 2
+        }
+        new Glide('.glide', config).mount()
+    </script>
+
+    <!-- animte on scroll import -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+           offset: 400,
+           duration: 1000
+        });
+    </script>
+
+    <!-- lightbox js link -->
+     <script src="/assets/js/lightbox-plus-jquery,js"></script>
+
+    <!-- Java Script link -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
